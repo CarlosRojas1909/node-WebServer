@@ -65,9 +65,9 @@ app.get('/bad', (req, res) => {
 });
 
 //Route
-app.get('/project', (req, res) =>{
-    res.render('project',{
-      pageTitle: 'Project Page'
+app.get('/projects', (req, res) =>{
+    res.render('projects',{
+      pageTitle: 'Projects Page'
     })
 });
 
