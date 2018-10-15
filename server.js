@@ -62,7 +62,14 @@ app.get('/bad', (req, res) => {
     res.send({
       errorMessage: 'Unable to handle request'
     })
-})
+});
+
+//Route
+app.get('/project', (req, res) =>{
+    res.render('project',{
+      pageTitle: 'Project Page'
+    })
+});
 
 // Listener
 app.listen(port, () => {
